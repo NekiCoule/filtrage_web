@@ -1,0 +1,88 @@
+<!DOCTYPE HTML5>
+<html>
+
+<!--head-->
+	<head>
+		<title>Un super formulaire de ouf</title>
+		<meta charset="UTF-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.png">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+		<script type="text/javascript" src="../script/traitement.js"></script>
+
+	</head>
+
+
+	<body name="body">
+
+    <h1>Bonjour</h1>
+
+    <!--formulaire-->
+    <form action="traitement.php" method="POST" id="frmInscription" name="Inscription">
+
+      <!--Nom-->
+      <label>Nom: </label>
+      <input type="text" id="iptNom" name="Nom" size="40" placeholder="inscrire votre nom ici (40 caractères max)" required />
+      <span id="ErrNom"></span>
+			<br/>
+			<br/>
+
+      <!--Prenom-->
+      <label>Prénom: </label>
+      <input type="text" id="iptPrenom" name="Prenom" size="40" placeholder="inscrire votre prenom ici (40 caractères max)" required />
+      <span id="ErrPrenom"></span>
+			<br/>
+			<br/>
+
+      <!--sexe-->
+      <p>Votre sexe: </p>
+      <input type="radio" id="rdbHomme" name="Sexe" value="Homme" required />
+      <label for="RadioHomme">Homme</label>
+      <input type="radio" id="rdbFemme" name="Sexe" value="Femme" required />
+      <label for="RadioFemme">Femme</label>
+      <input type="radio" id="rdbAutre" name="Sexe" value="Autre" required />
+      <label for="RadioAutre">Autre</label>
+      <span id="ErrRadioSexe"></span>
+			<br/>
+			<br/>
+
+      <!--Email-->
+      <label for="Email">Email: </label>
+      <input type="email" id="iptEmail" name="Email" placeholder="prenom.nom@mail.com" required />
+      <span id="ErrEmail"></span>
+			<br/>
+			<br/>
+
+      <!--Sport-->
+      <label>Sports (Appuyez sur controle en cliquant pour en choisir plusieurs): </label>
+			<br />
+      <select name="Sports" multiple>
+        <option value="Football">Football</option>
+        <option value="Rugby">Rugby</option>
+        <option value="Badminton">Badminton</option>
+        <option value="Tenis">Tenis</option>
+        <option value="Bowling">Bowling</option>
+        <option value="Natation">Natation</option>
+      </select>
+      <span id="ErrSport"></span>
+			<br/>
+			<br/>
+
+			<!--Validation du form-->
+      <input type="button" value="Valider" id="btnValide" name="Valider" onclick="Validation();" />
+		<!--Fin du formulaire-->
+		</form>
+	</body>
+
+<!--footer-->
+	<footer name="footer">
+    <h4>Contact <img src="../images/NekiClool.png" alt="Ma Tronche" title="C'est moa"></h4>
+    <a href="mailto:m.weber@ludus-academie.com">M'envoyer un mail</a>
+		<br />
+    <a href="../images/icon.png" title="Sauvetage de l'icone">Télécharger l'icone du site</a>
+    <br />
+		<a href="../images/NekiClool.png" title="Téléchargez moi, allez-y">Télécharger ma frimousse</a>
+    <br />
+    <a href="http://www.google.fr" alt="Retour au on endroit" title="Sauvetage" target="_self">Bouée de sauvetage</a>
+	</footer>
+
+</html>

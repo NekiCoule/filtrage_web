@@ -1,0 +1,63 @@
+@font-face{
+	font-family: 'RobotoFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+	     url('WebFont.woff') format('woff'),
+	     url('Roboto-Black.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+body {
+  background-color: silver;
+}
+
+@media screen and (max-width: 600px){
+	body {
+		background: url("");
+		background-color: silver;
+	}
+}
+
+h1 {
+  color: darkred;
+  text-align: center;
+}
+
+h4 {
+  color: purple
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+span {
+	font-family: RobotoFont, castellar, magneto;
+	color: mediumpurple
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.important{
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+a[title]{
+  color: darkcyan;
+  inset: 3px 10px 3px 10px;
+}
+
+a[title *="Sauvetage"]{
+  color: crimson  ;
+}
+
+.flotant{
+  float: right;
+}
